@@ -33,76 +33,12 @@ The project uses a **univariate LSTM model** to forecast daily closing prices of
 
 ### **How to Run**
 
-<table>
-
-&nbsp; <tr>
-
-&nbsp;   <th>Step</th>
-
-&nbsp;   <th>Action / Command</th>
-
-&nbsp; </tr>
-
-
-
-&nbsp; <tr>
-
-&nbsp;   <td><b>1.</b> Install dependencies</td>
-
-&nbsp;   <td>
-
-&nbsp;     <code>pip install pandas numpy matplotlib tensorflow scikit-learn</code>
-
-&nbsp;     <ul>
-
-&nbsp;       <li>Run this command in your system shell or Git Bash terminal ✔</li>
-
-&nbsp;     </ul>
-
-&nbsp;   </td>
-
-&nbsp; </tr>
-
-
-
-&nbsp; <tr>
-
-&nbsp;   <td><b>2.</b> Dataset check</td>
-
-&nbsp;   <td>Ensure dataset contains a numeric <code>Close</code> column and is chronological</td>
-
-&nbsp; </tr>
-
-
-
-&nbsp; <tr>
-
-&nbsp;   <td><b>3.</b> Run notebook</td>
-
-&nbsp;   <td>Open and run <code>time\_series\_forecasting.ipynb</code> cells sequentially (top-to-bottom)</td>
-
-&nbsp; </tr>
-
-
-
-&nbsp; <tr>
-
-&nbsp;   <td><b>4.</b> Reproducibility</td>
-
-&nbsp;   <td>For reproducibility, keep <code>window = 30</code> and avoid shuffling during train/test split</td>
-
-&nbsp; </tr>
-
-</table>
-
-
-
+<table> <tr><td><b>1.</b> Install dependencies</td></tr> <tr><td><code>pip install pandas numpy matplotlib tensorflow scikit-learn</code></td></tr> <tr><td><b>2.</b> Ensure dataset contains a numeric <code>Close</code> column and is chronological</td></tr> <tr><td><b>3.</b> Open and run <code>time_series_forecasting.ipynb</code> cells sequentially (top-to-bottom)</td></tr> <tr><td><b>4.</b> For reproducibility, keep window = 30 and avoid shuffling during split</td></tr> </table>
 
 
 ### **Evaluation Results** 
 
 <table> <tr> <th>Metric</th> <th>Result</th> </tr> <tr> <td>Mean Absolute Error (MAE)</td> <td>~0.63</td> </tr> <tr> <td>Root Mean Squared Error (RMSE)</td> <td>~0.83</td> </tr> </table>
-
 
 
 (RMSE > MAE is expected as RMSE penalizes larger errors more)
