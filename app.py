@@ -3,9 +3,10 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 import pandas as pd
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.metrics import mean_absolute_error, mean_squared_error
 from tensorflow.keras.models import load_model
+from sklearn.metrics import mean_absolute_error, mean_squared_error
+from sklearn.preprocessing import MinMaxScaler  # <-- add this
+
 
 st.title("AAPL Close Price Forecasting (Univariate LSTM)")
 
